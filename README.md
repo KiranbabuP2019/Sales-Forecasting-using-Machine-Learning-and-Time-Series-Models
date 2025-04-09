@@ -22,7 +22,8 @@ This project predicts daily product sales across stores in Ecuador using histori
 **XGBoost** performed best with the lowest RMSE and highest R².
 
   ## 📊 Evaluation Metrics (RMSE)
-| Model         | RMSE   |
+| Model         | RMSE   |  ![image](https://github.com/user-attachments/assets/5518c25f-5b0a-4c39-a50e-1d85340aab50)
+
 |---------------|--------|
 | Naïve         | 439.62 |
 | ARIMA         | 12190.0|
