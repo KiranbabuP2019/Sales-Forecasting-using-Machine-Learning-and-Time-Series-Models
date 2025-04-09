@@ -18,13 +18,32 @@ This project predicts daily product sales across stores in Ecuador using histori
 
 3. Run all cells to train and evaluate models.
 
-## 🧠 Summary of Results
-## 🏆 Best Model
-- **XGBoost** performed best with the lowest RMSE and highest R².
-- **Key Features:** Promotions, holidays, recent sales trends
-- **Business Insight:** Use forecasts for inventory planning and event-based promotions.
+## 🔍 Visual Comparison
+- All models were evaluated by plotting actual vs. predicted sales.
+- XGBoost produced the most consistent trend matching real sales across various categories.
+- ARIMA and Prophet showed seasonality but lacked in predictive strength for irregular patterns.
+- Naïve baseline failed on dynamic patterns.
 
-## 📊 Evaluation Metrics (RMSE)
+## 📌 Business Insights
+1. Model Selection for Deployment
+- Use XGBoost for forecasting as it balances speed, accuracy, and interpretability.
+- Avoid using ARIMA/Prophet for short-term planning due to volatility.
+
+2. Holiday & Promotion Sensitivity
+- Sales spiked during national holidays and special events.
+- Black Friday, Ecuadorian holidays, and Christmas contributed to large sales jumps.
+- Promotions provided short-term boosts—can be leveraged for clearance or upselling.
+
+3. Oil Price Impact
+- Affected overall cost-sensitive categories indirectly (transportation-heavy).
+
+## 📈 Recommendations
+- 🏪 Inventory Planning: Use forecasts to pre-stock for holidays and weekends.
+- 🎯 Targeted Promotions: Run location-based promotions during off-peak weeks.
+- 📉 Avoid Overfitting: Monitor model performance regularly and retrain quarterly.
+- 🔄 Retrain: Incorporate recent holiday or pricing changes to stay relevant.
+
+  ## 📊 Evaluation Metrics (RMSE)
 | Model         | RMSE   |
 |---------------|--------|
 | Naïve         | 439.62 |
@@ -33,6 +52,10 @@ This project predicts daily product sales across stores in Ecuador using histori
 | XGBoost       | 692.22 |
 | LSTM          | 939.41 |
 
-## 📊 Insights
-- Holidays and promotions strongly influenced demand.
-- Inventory and marketing strategies can be planned using forecast outputs.   
+## ✅ Conclusion
+- The XGBoost model is production-ready with strong accuracy and business relevance.
+- It can significantly aid retail planning, logistics, and marketing strategies.
+
+
+
+
