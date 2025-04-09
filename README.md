@@ -19,7 +19,8 @@ This project predicts daily product sales across stores in Ecuador using histori
 3. Run all cells to train and evaluate models.
 
 ## 🧠 Summary of Results
-- **Best Model:** XGBoost
+## 🏆 Best Model
+- **XGBoost** performed best with the lowest RMSE and highest R².
 - **Key Features:** Promotions, holidays, recent sales trends
 - **Business Insight:** Use forecasts for inventory planning and event-based promotions.
 
@@ -31,3 +32,7 @@ This project predicts daily product sales across stores in Ecuador using histori
 | Random Forest | 706.61 |
 | XGBoost       | 692.22 |
 | LSTM          | 939.41 |
+
+## 📊 Insights
+- Holidays and promotions strongly influenced demand.
+- Inventory and marketing strategies can be planned using forecast outputs.   
